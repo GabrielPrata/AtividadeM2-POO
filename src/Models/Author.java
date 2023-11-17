@@ -21,6 +21,14 @@ public class Author {
         Name = name;
     }
 
-    
+
+    public int getId() {
+        return Id;
+    }
+
+
+    public String getName() {
+        return Name;
+    }
     
 }
