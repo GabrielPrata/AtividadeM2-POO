@@ -1,14 +1,16 @@
 package Models;
 
-import java.time.LocalDate;
+import java.util.Date;
+
+import Enums.Gender;
 
 public class Disk extends Item {
     private int Duration;
     private Recorder Recorder;
 
     //Construtores
-    public Disk(int duration, Recorder recorder, int id, String name, LocalDate dateSystemInput, LocalDate publicationDate) {
-        super(id, name, dateSystemInput, publicationDate);
+    public Disk(int duration, Recorder recorder, int id, String name, Date dateSystemInput, Date publicationDate, Gender gender) {
+        super(id, name, dateSystemInput, publicationDate, gender);
         Duration = duration;
         Recorder = recorder;
     }

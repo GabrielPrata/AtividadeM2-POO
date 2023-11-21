@@ -1,6 +1,8 @@
 package Models;
 
-import java.time.LocalDate;
+import java.util.Date;
+
+import Enums.Gender;
 
 public class Magazine extends Item {
     private int Pages;
@@ -9,8 +11,8 @@ public class Magazine extends Item {
 
 
     //Construtores
-    public Magazine(int pages, int edition, PublishingCompany publishedBy, int id, String name, LocalDate dateSystemInput, LocalDate publicationDate) {
-        super(id, name, dateSystemInput, publicationDate);
+    public Magazine(int pages, int edition, PublishingCompany publishedBy, int id, String name, Date dateSystemInput, Date publicationDate, Gender gender) {
+        super(id, name, dateSystemInput, publicationDate, gender);
         Pages = pages;
         Edition = edition;
         PublishedBy = publishedBy;

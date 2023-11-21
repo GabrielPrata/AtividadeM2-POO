@@ -1,5 +1,5 @@
 package Enums;
 
-enum DiaDaSemana {
+public enum Gender {
     COMEDIA, ROMANCE, TERROR, DRAMA, AVENTURA, ACAO, SCIFI
 }
